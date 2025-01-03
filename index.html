@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -48,18 +48,88 @@
                 </ul>
 
             </address>
+            <button class="burger-btn">
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#burger-icon"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close">
+                    <svg class="svg-mobile-menu" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg></button>
+                <nav class="mobile-menu-nav">
+                    <ul class="ul-mobile-menu">
+                        <li class="mobile-menu-item">
+                            <a class="mobile-link" href="#">Studio</a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="mobile-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="mobile-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="menu-address">
+                    <ul class="ul-menu-address">
+                        <li class="li-menu-address-tel"><a href="tel:+110001111111" class="contact-menu">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="li-menu-address-email"><a href="mailto:info@devstudio.com" class="contact-menu">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <div>
+                    <ul class="menu-icon">
+                    <li class="menu-icon-li">
+                        <a class="social-link-menu" href="#">
+                            <svg class="svg-menu" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-icon-li">
+                        <a class="social-link-menu" href="#">
+                            <svg class="svg-menu" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-icon-li">
+                        <a class="social-link-menu" href="#">
+                            <svg class="svg-menu" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-icon-li">
+                        <a class="social-link-menu" href="#">
+                            <svg class="svg-menu" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
         </div>
     </header>
 
     <main class="main">
-        <section class="section-one section">
+        <section class="section-one section hidden">
             <div class="container">
                 <h1 class="title-section-one">Effective Solutions
                     for Your Business</h1>
                 <button class="button-section-one" type="button">Order Service</button>
             </div>
         </section>
-        <section class="section-two section">
+        <section class="section-two section hidden">
             <div class="container">
                 <h2 class="visually-hidden">Zagolovok</h2>
                 <ul class="ul-feature">
@@ -102,7 +172,7 @@
         </section>
 
 
-        <section class="section-three section">
+        <section class="section-three section hidden">
             <div class="container">
                 <h2 class="title-section-three">Our Team</h2>
                 <ul class="ul-team">
@@ -284,7 +354,7 @@
         </section>
 
 
-        <section class="section-four section">
+        <section class="section-four section hidden">
             <div class="container">
                 <h2 class="title-two-section-four">Our Portfolio</h2>
                 <ul class="ul-portfolio">
@@ -384,7 +454,7 @@
 
     </main>
 
-    <footer class="footer section">
+    <footer class="footer section hidden">
         <div class="footer-all all-footer">
             <div class="container footer-container">
                 <a href="/" class="logo-footer">Web<span class="logo-studio-footer">Studio</span></a>
